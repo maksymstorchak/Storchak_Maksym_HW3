@@ -1,0 +1,15 @@
+body {
+       margin: 0 20%;
+}
+li{
+    list-style: none;
+}
+#table1 {
+    border: 4px double black;   
+}
+th {
+    border: 1px double black;
+}
+td {
+    border: 1px double black;
+}

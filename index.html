@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset-context/cssreset-context-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forms/Tables</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend><strong>Короткор о себе</strong></legend>
+            <ul>
+                <li>
+                    <label for="name">Имя:</label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
+                    <label for="surname">Фамилия:</label>
+                    <input type="text" name="surname" id="surname">
+                </li>
+                <li>
+                    <label for="">Пол:</label>
+                    <input type="radio" name="Sex" value="Мужской" checked="checked" id="man">
+                    <label for="man">Мужской</label>
+                    <input type="radio" name="Sex" value="Женский" id="woman">
+                    <label for="">Женский</label>
+                </li>
+                <li>
+                    <label for="age">Возраст:</label>
+                    <input type="number" name="age" min="1" max="99" id="age">лет
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <form action="" method="get">
+        <fieldset>
+            <legend><strong>Подробнее о себе</strong></legend>
+            <ul>
+                <li>
+                    <input type="radio" name="Sex" value="Молодой человек" checked="checked" id="youngman">
+                    <label for="youngman">Молодой человек</label>
+                </li>
+                <li>
+                    <input type="radio" name="Sex" value="Девушка" id="girl">
+                    <label for="girl">Девушка</label>
+                </li>
+                <li>
+                    <input type="date" name="date" value="Дата рождения" id="date">
+                    <label for="date">Дата рождения</label>
+                </li>
+                <li>
+                    <input type="text" name="maritalstatus" id="maritalstatus">
+                    <label for="maritalstatus">Семейное положение</label>
+                </li>
+                <li>
+                    <input type="text" name="socialstatus" id="socialstatus">
+                    <label for="socialstatus">Социальный статус</label>
+                </li>
+                <li>
+                    <input type="text" name="residence" id="residence">
+                    <label for="residence">Местожительство</label>
+                </li>
+            </ul>
+            <label for=""><strong>Что вы обычно делаете на выходных:</strong></label>
+            <ul>
+                <li>
+                    <input type="checkbox" name="weekends" id="sleep">
+                    <label for="sleep">Сплю</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="weekends" id="walk">
+                    <label for="walk">Гуляю с друзьями</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="weekends" id="fishing">
+                    <label for="fishing">Хожу на рыбалку</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="weekends" id="play">
+                    <label for="play">Играю в игры</label>
+                </li>
+            </ul>
+            <label for="htmlbook"><strong>Расказать о книге, посвященной HTML:</strong></label>
+            <ul>
+                <li>
+                    <select name="menu" id="htmlbook" size="1">
+                        <option value="first">1</option>
+                        <option value="second">2</option>
+                        <option selected="selected" value="third">Site frequensy:</option>
+                    </select>
+                </li>
+            </ul>
+            <label for=""><strong>Сколько книг вы прочитали за свою жизнь:</strong></label>
+            <ul>
+                <li>
+                    <input type="radio" name="book" value="0-10" id="ten">
+                    <label for="ten">0-10</label>
+                </li>
+                <li>
+                    <input type="radio" name="book" value="11-20" id="twenty">
+                    <label for="twenty">11-20</label>
+                </li>
+                <li>
+                    <input type="radio" name="book" value="21-50" id="fifty">
+                    <label for="fifty">21-50</label>
+                </li>
+                <li>
+                    <input type="radio" name="book" value="50+" id="fiftyplus">
+                    <label for="fiftyplus">50+</label>
+                </li>
+            </ul>
+            <ul>
+                <li><strong><label for="comment">Ваши коментарии:</label></strong></li>
+                <li><textarea name="comment" id="comment" cols="30" rows="10"></textarea></li>
+            </ul>
+            <label for="position"></label>
+            <ul>
+                <li>
+                    <select name="menu" size="3" multiple="multiple" id="position">
+                        <option value="first">Первая позиция</option>
+                        <option selected="selected" value="second">Вторая позиция</option>
+                        <option value="third">Третья позиция</option>
+                        <option value="fourth">Четвертая позиция</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend><strong>И в заключении</strong></legend>
+            <ul>
+                <li>
+                    <input type="text" placeholder="Это поле было введено до вас" id="hint">
+                    <label for="hint"></label>
+                </li>
+                <li>
+                    <label for="email"><strong>Email:</strong></label>
+                </li>
+                <li>
+                    <input type="email" name="emails" id="email">
+                </li>
+            </ul>
+            <div><strong>Хотите подписаться на самую модную рассылку спама?</strong></div>
+            <label for=""><em>Выберите категории</em></label>
+            <ul>
+                <li>
+                    <input type="checkbox" name="spam" id="equipment">
+                    <label for="equipment">Оборудование</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="spam" id="food">
+                    <label for="food">Как приготовить обеды</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="spam" id="million">
+                    <label for="milllion">Заработай миллион за два дня!</label>
+                </li>
+            </ul>
+            <label for=""><strong>На сколько сложная задача:</strong></label>
+            <ul>
+                <li>
+                    <input type="radio" name="complexity" id="easy">
+                    <label for="easy">Совсем нет</label>
+                </li>
+                <li>
+                    <input type="radio" name="complexity" id="mediums">
+                    <label for="mediums">Так себе</label>
+                </li>
+                <li>
+                    <input type="radio" name="complexity" id="hard">
+                    <label for="hard">Еле справился</label>
+                </li>
+            </ul>
+        </fieldset>
+        <div id="button"><input type="submit" value="Отправить"></div>
+    </form>
+    <table id="table1">
+        <tr>
+            <th>Об`єкт обробки</th>
+            <th>Норма витрати препарату, мл/10л.</th>
+            <th>Норма витрати препарату, л/сотку</th>
+            <th>Шкідливі об`єкти</th>
+        </tr>
+        <tr>
+            <td>Картопля</td>
+            <td>60-80</td>
+            <td>до 5 л.</td>
+            <td>Однорічні дводольні та злакові бур`яни</td>
+        </tr>
+        <tr>
+            <td>Морква</td>
+            <td>40-60</td>
+            <td>до 5 л.</td>
+            <td>Однорічні дводольні та злакові бур`яни</td>
+        </tr>
+    </table>
+    <table id="tabel2">
+        <tr>
+            <th>Культура</th>
+            <th>Бур`яни</th>
+            <th>Норма витрати препарату, л/га</th>
+            <th>Строки обробки</th>
+        </tr>
+        <tr>
+            <th>Ріпак</th>
+            <td>однорічні</td>
+            <td>2-3</td>
+            <td>1 обробка в фазі 2-4 листків у бур`янів 10-15 см.</td>
+        </tr>
+        <tr>
+            <th>Томати</th>
+            <td rowspan="2">однорічні та багаторічні</td>
+            <td>1-2 2-3</td>
+            <td rowspan="3">1 обробка в фазі 1 -2 листків культури, висота бур'янів 10 - 15 см.</td>
+        </tr>
+        <tr>
+            <th>Огірки</th>
+            <td>2-3</td>
+        </tr>
+        <th>Коноплі</th>
+        <td>однорічні</td>
+        <td>1,5</td>
+    </table>
+    <table id="table3">
+        <tr>
+            <th>Культура</th>
+            <th>Спектр дії</th>
+            <th>Норма витрати</th>
+        </tr>
+        <tr>
+            <td>Буряки(столові, цукрові, кормові), морква, соняшник, картопля, капуста, цибуля, ріпак, баклажани,
+                гарбузи, горох, дині,огірки, перець, петрушка, селера, спаржа, томати, плодові культури(вишня, груша,
+                персик, слива, яблуня), ягідні культури(суниця, смородина)</td>
+            <td>Гумай, куряче просо, види мишію, види пальчатки, види вівсюга, метлюг звичайний листохвіст польовий,
+                просо волосовидне</td>
+            <td>0,8 - 2,0 л/га</td>
+        </tr>
+        <tr>
+            <td>Однорічні та деякі багаторічні дводольні в т.ч. стійкі до 2,4-Д(підмаренник чіпкий, берізка польова,
+                зірочник середній, та ін..)</td>
+            <td>Пшениця озима</td>
+            <td>7,5 - 10</td>
+        </tr>
+        <tr>
+            <td>Поля, призначені для посіву озимих, овочевих, баштанних культур, цукрових буряків, кукурудзи,
+                багаторічних трав. Пари, несільськогосподарські угіддя, та ін..</td>
+            <td>Багаторічні дводольні(осоти, ромашки, молочаї, кульбаба, та ін..)</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
